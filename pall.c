@@ -11,12 +11,11 @@ void f_pall(stack_t **head, unsigned int counter)
 	(void)counter;
 
 	h = *head;
-	if (h == NULL)/*Check if the stack is empty (head is NULL).
-*/
+	if (h == NULL)/*Check if the stack is empty (head is NULL)*/
 		return;
 	while (h)
 	{
-		printf("%d\n", h->n);/*Print the value of the current element.*/
+		printf("%d\n", h->n);/*Print the value of the current element*/
 		h = h->next;/*Move to the next element in the stack*/
 	}
 }
