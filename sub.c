@@ -1,16 +1,19 @@
 #include "monty.h"
 /**
   *f_sub- sustration
-  *@head: stack head
-  *@counter: number
+  *@head: pointer to stack head
+  *@counter: number unused parameter
   *Return:NON to Return
  */
 void f_sub(stack_t **head, unsigned int counter)
 {
-	stack_t *aux;
-	int sus, nodes;
+	stack_t *aux;/*Declare a pointer to a stack_t structure.
+ */
+	int sus, nodes;/*Declare integers 'sus' and 'nodes' to hold subtraction result and count of stack elements.
+*/
 
-	aux = *head;
+	aux = *head;/*Set 'aux' to point to the same memory location as '*head'.
+        */
 	for (nodes = 0; aux != NULL; nodes++)
 		aux = aux->next;
 	if (nodes < 2)
@@ -25,5 +28,5 @@ void f_sub(stack_t **head, unsigned int counter)
 	sus = aux->next->n - aux->n;
 	aux->next->n = sus;
 	*head = aux->next;
-	free(aux);
+	free(aux);/*Free memory of the old top element.*/
 }
