@@ -11,7 +11,7 @@ void f_pall(stack_t **head, unsigned int counter)
 
 {
 	stack_t *h;
-	(void)countter; /*unused variable*/
+	(void)counter; /*unused variable*/
 
 	h = *head; /*initialize a temporary pointer*/
 	if (h == NULL)

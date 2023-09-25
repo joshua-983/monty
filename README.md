@@ -28,4 +28,3 @@ Operations: Queues also support two primary operations:
 Enqueue: Adds an element to the back of the queue.
 Dequeue: Removes and returns the front element of the queue.
 Common Use Cases: Queues are used when you want to manage data in the order it was received or when you need to ensure that tasks are processed in a specific order, such as in task scheduling, print job management, or breadth-first search algorithms.
-

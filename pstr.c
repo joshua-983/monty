@@ -18,10 +18,8 @@ void f_pstr(stack_t **head, unsigned int counter)
 			break;
 		}
 		printf("%c", h->n);/**Print the character corresponding to the stack's element value*/
-/
-		h = h->next;/*Move to the next element in the stack.
-*/
+
+		h = h->next;/*Move to the next element in the stack*/
 	}
-	printf("\n");/*Print a newline character to end the string.
-*/
+	printf("\n");/*Print a newline character to end the string*/
 }
